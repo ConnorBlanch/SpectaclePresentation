@@ -267,13 +267,13 @@ const Presentation = () => (
 			/>
 		</Slide>
 		<Slide transitionEffect="slide">
-			<FlexBox height="25%" flexDirection="row" justifyContent="center">
+			<FlexBox height="15%" flexDirection="row" justifyContent="center">
 				<Text color="secondary" fontSize="80px">
 					This Presentation Was Done With Code!
 				</Text>
 			</FlexBox>
-			<FlexBox height="75%" flexDirection="column" alignItems="flex-start">
-				<CodePane fontSize={25} language="JavaScript" autoFillHeight>
+			<FlexBox height="85%" flexDirection="column" alignItems="center">
+				<CodePane fontSize={25} language="javascript">
 					{slideCodeBlock}
 				</CodePane>
 			</FlexBox>
