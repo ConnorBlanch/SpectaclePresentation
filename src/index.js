@@ -52,35 +52,35 @@ const template = () => (
 // SPECTACLE_CLI_TEMPLATE_END
 
 const slideCodeBlock = `<Slide transitionEffect="slide">
-		<FlexBox height="15%" flexDirection="row" justifyContent="center">
-			<Text color="secondary" fontSize="80px">
-				Courses to Take
-			</Text>
-		</FlexBox>
-		<FlexBox height="85%" flexDirection="column" alignItems="flex-start">
-			<UnorderedList fontSize="20px">
-				<Text color="secondary" fontSize="25px">
-					Pre College
-				</Text>
-				<ListItem>Mathematics</ListItem>
-				<ListItem>Science</ListItem>
-				<ListItem>Any programming type classes that are available</ListItem>
-				<ListItem>Online!</ListItem>
-				<Text color="secondary" fontSize="25px">
-					College
-				</Text>
-				<ListItem>Mathematics</ListItem>
-				<ListItem>Pre Defined Computer Courses</ListItem>
-			</UnorderedList>
-		</FlexBox>
-		<Image
-			src="https://cdn.promessinc.com/wp-content/themes/promess/images/Promess-Incorporated.png"
-			width="180"
-			height="auto"
-			alt="Company Logo"
-			align="left"
-		/>
-	</Slide>
+							<FlexBox height="15%" flexDirection="row" justifyContent="center">
+																				<Text color="secondary" fontSize="80px">
+																					Courses to Take
+																				</Text>
+							</FlexBox>
+							<FlexBox height="85%" flexDirection="column" alignItems="flex-start">
+																				<UnorderedList fontSize="20px">
+																																<Text color="secondary" fontSize="25px">
+																																	Pre College
+																																</Text>
+																																<ListItem>Mathematics</ListItem>
+																																<ListItem>Science</ListItem>
+																																<ListItem>Any programming type classes that are available</ListItem>
+																																<ListItem>Online!</ListItem>
+																																<Text color="secondary" fontSize="25px">
+																																	College
+																																</Text>
+																																<ListItem>Mathematics</ListItem>
+																																<ListItem>Pre Defined Computer Courses</ListItem>
+																				</UnorderedList>
+							</FlexBox>
+							<Image
+								src="https://cdn.promessinc.com/wp-content/themes/promess/images/Promess-Incorporated.png"
+								width="180"
+								height="auto"
+								alt="Company Logo"
+								align="left"
+							/>
+</Slide>
 `;
 
 const Presentation = () => (
@@ -267,13 +267,10 @@ const Presentation = () => (
 			/>
 		</Slide>
 		<Slide transitionEffect="slide">
-			<FlexBox height="15%" flexDirection="row" justifyContent="center">
+			<FlexBox height="100%" flexDirection="column" justifyContent="center">
 				<Text color="secondary" fontSize="80px">
 					This Presentation Was Done With Code!
 				</Text>
-			</FlexBox>
-			<FlexBox height="85%" flexDirection="column" alignItems="center">
-				<pre color="primary">{slideCodeBlock}</pre>
 			</FlexBox>
 			<Image
 				src="https://cdn.promessinc.com/wp-content/themes/promess/images/Promess-Incorporated.png"
@@ -282,6 +279,18 @@ const Presentation = () => (
 				alt="Company Logo"
 				align="left"
 			/>
+		</Slide>
+		<Slide>
+			<CodePane fontSize={5} language="jsx" autoFillHeight>
+				{slideCodeBlock}
+			</CodePane>
+		</Slide>
+		<Slide>
+			<FlexBox height="100%" flexDirection="column" justifyContent="center">
+				<Text color="secondary" fontSize="80px">
+					Lets try adding a slide!
+				</Text>
+			</FlexBox>
 		</Slide>
 		<Slide transitionEffect="slide">
 			<FlexBox height="100%" flexDirection="column" justifyContent="center">
