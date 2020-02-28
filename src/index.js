@@ -30,10 +30,10 @@ const theme = {
 		text: '"Open Sans Condensed", Helvetica, Arial, sans-serif'
 	},
 	colors: {
-		primary: '#84898B',
+		primary: '#C1C0BF',
 		secondary: 'white',
 		tertiary: '#2F6777',
-		quaternary: '#84898B'
+		quaternary: 'white'
 	}
 };
 // SPECTACLE_CLI_THEME_END
@@ -273,9 +273,7 @@ const Presentation = () => (
 				</Text>
 			</FlexBox>
 			<FlexBox height="85%" flexDirection="column" alignItems="center">
-				<CodePane fontSize={25} language="javascript">
-					{slideCodeBlock}
-				</CodePane>
+				<pre color="primary">{slideCodeBlock}</pre>
 			</FlexBox>
 			<Image
 				src="https://cdn.promessinc.com/wp-content/themes/promess/images/Promess-Incorporated.png"
@@ -286,10 +284,11 @@ const Presentation = () => (
 			/>
 		</Slide>
 		<Slide transitionEffect="slide">
-			<FlexBox height="25%" flexDirection="row" justifyContent="center">
-				<Text color="secondary" fontSize="80px" />
+			<FlexBox height="100%" flexDirection="column" justifyContent="center">
+				<Text color="secondary" fontSize="80px">
+					Questions?
+				</Text>
 			</FlexBox>
-			<FlexBox height="75%" flexDirection="column" alignItems="flex-start" />
 			<Image
 				src="https://cdn.promessinc.com/wp-content/themes/promess/images/Promess-Incorporated.png"
 				width="180"

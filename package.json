@@ -11,7 +11,8 @@
     "prop-types": "^15.7.2",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
-    "spectacle": "^6.0.0-alpha.8"
+    "spectacle": "^6.0.0-alpha.8",
+    "spectacle-code-slide": "^0.5.2"
   },
   "devDependencies": {
     "@babel/core": "^7.7.7",
